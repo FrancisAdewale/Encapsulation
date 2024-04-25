@@ -1,5 +1,5 @@
 package org.example;
 
-public interface Driveable {
+public interface Driveable extends Moveable{
     void drive();
 }

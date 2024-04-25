@@ -15,6 +15,8 @@ public class Main {
         Water water = new Water();
         water.addTraffic(new Duck());
         water.addTraffic(new Fish());
+        water.addTraffic(new Shark());
+
 
         Road road = new Road();
         road.addTraffic(new Car());
@@ -24,8 +26,8 @@ public class Main {
         List<Environment<?>> environments = List.of(sky, water, road);
 
         for (Environment<?> environment: environments) {
-//            environment.checkTraffic();
-            environment.checkVehicles();
+            environment.checkTraffic();
+          //  environment.checkVehicles();
         }
 
     }

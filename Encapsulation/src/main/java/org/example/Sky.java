@@ -1,7 +1,7 @@
 package org.example;
 
 public class Sky extends Environment<Flyable> {
-
+    int maxSpeed = 70;
     @Override
     public void checkTraffic() {
        for(Flyable flyable : traffic ) {

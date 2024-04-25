@@ -6,6 +6,7 @@ import java.util.List;
 public abstract class Environment<T> {
 
     protected List<T> traffic = new ArrayList<>();
+    int maxSpeed;
 
     public abstract void checkTraffic();
 

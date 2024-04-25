@@ -1,10 +1,16 @@
 package org.example;
 
 public class Water extends Environment<Swimmable>{
+    int maxSpeed = 30;
     @Override
     public void checkTraffic() {
         for(Swimmable swim : traffic ) {
-            System.out.println(swim.getClass().getSimpleName() + " is swimming!");
+            if(swim.getSpeed() > maxSpeed) {
+                System.out.println(swim.getClass().getSimpleName() + " is going too fast");
+            } else {
+                System.out.println(swim.getClass().getSimpleName() + " is swimming!");
+
+            }
         }
 
     }

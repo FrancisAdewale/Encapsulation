@@ -1,10 +1,6 @@
 package org.example;
 
-public class Fish extends Animal implements Swimmable{
-    @Override
-    public void makeSound() {
-
-    }
+public class Shark extends Fish implements Swimmable{
 
     @Override
     public void swim() {
@@ -13,17 +9,16 @@ public class Fish extends Animal implements Swimmable{
 
     @Override
     public int getSpeed() {
-        return 35;
+        return 25;
     }
 
     @Override
     public int[] getPosition() {
         return new int[]{3,1};
-
     }
 
     @Override
     public String getDirection() {
-        return "";
+        return super.getDirection();
     }
 }

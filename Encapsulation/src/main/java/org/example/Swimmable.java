@@ -1,6 +1,6 @@
 package org.example;
 
-public interface Swimmable {
+public interface Swimmable extends Moveable {
     void swim();
 
 }
