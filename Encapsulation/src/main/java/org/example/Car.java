@@ -14,6 +14,17 @@ public class Car extends Vehicle implements Driveable{
     }
 
     @Override
+    public void tick() {
+        Road road = new Road();
+        if (road.grid[0][0].equals("O")){
+            
+
+        }
+
+
+    }
+
+    @Override
     public int getSpeed() {
         return 8;
     }
@@ -26,6 +37,6 @@ public class Car extends Vehicle implements Driveable{
 
     @Override
     public String getDirection() {
-        return "";
+        return "right";
     }
 }

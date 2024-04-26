@@ -8,6 +8,12 @@ public class Aeroplane extends Vehicle implements Flyable, Driveable{
     }
 
     @Override
+    public void tick() {
+
+
+    }
+
+    @Override
     public void move() {
 
     }

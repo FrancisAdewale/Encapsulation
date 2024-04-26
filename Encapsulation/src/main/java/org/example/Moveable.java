@@ -6,5 +6,5 @@ public interface Moveable {
 
     int[] getPosition();
     String getDirection();
-
+    void tick();
 }

@@ -2,6 +2,16 @@ package org.example;
 
 public class Water extends Environment<Swimmable>{
     int maxSpeed = 30;
+    double startX;
+    double startY;
+    double direction;
+
+    int[][] grid = new int[][]{
+            {9,1,1,1},
+            {1,1,1,1},
+            {1,1,1,1}
+    };
+
     @Override
     public void checkTraffic() {
         for(Swimmable swim : traffic ) {
@@ -23,4 +33,6 @@ public class Water extends Environment<Swimmable>{
             }
         }
     }
+
+
 }

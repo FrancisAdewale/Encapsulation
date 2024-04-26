@@ -3,6 +3,16 @@ package org.example;
 public class Road extends Environment<Driveable>{
 
     int maxSpeed = 20;
+    int startX = 0;
+    int startY = 0;
+    String direction;
+
+    String[][] grid = new String[][]{
+            {" "," "," "," "},
+            {" "," "," "," "},
+            {" "," "," "," "}
+    };
+
     @Override
     public void checkTraffic() {
         for(Driveable driveable : traffic ) {
